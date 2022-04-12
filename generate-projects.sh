@@ -5,7 +5,7 @@
 # This source code is licensed under the license found in the
 # LICENSE file in the root directory of this source tree.
 
-EXPECTED_XCODEGEN_VERSION="2.24.0"
+EXPECTED_XCODEGEN_VERSION="2.28.0"
 
 RESET='\033[0m'
 YELLOW='\033[1;33m'
@@ -36,7 +36,7 @@ fi
 
 for KIT_DIR in FBSDKCoreKit_Basics FBAEMKit FBSDKCoreKit TestTools FBSDKLoginKit FBSDKShareKit FBSDKGamingServicesKit; do
     cd $KIT_DIR || exit
-    $XCODEGEN_BINARY generate --use-cache
+    $XCODEGEN_BINARY generate
     cd ..
 done
 

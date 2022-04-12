@@ -11,11 +11,11 @@ IPHONEOS_DEPLOYMENT_TARGET = 10.0
 TARGETED_DEVICE_FAMILY = 1,2
 
 // Where to find embedded frameworks
-LD_RUNPATH_SEARCH_PATHS = $(inherited) @executable_path/Frameworks @loader_path/Frameworks
+// LD_RUNPATH_SEARCH_PATHS = $(inherited) @executable_path/Frameworks @loader_path/Frameworks
 
 // Bitcode Support
-ENABLE_BITCODE = YES
-BITCODE_GENERATION_MODE = bitcode
+// ENABLE_BITCODE = YES
+// BITCODE_GENERATION_MODE = bitcode
 
-FB_BITCODE_FLAG = -fembed-bitcode
-OTHER_CFLAGS = $(inherited) $(FB_BITCODE_FLAG)
+// FB_BITCODE_FLAG = -fembed-bitcode
+// OTHER_CFLAGS = $(inherited) $(FB_BITCODE_FLAG)
